@@ -1,6 +1,12 @@
+N-Queens
+Generate A Board Where There No Queens Can Attack Each Other Using A Genetic Algorithm or Simulated Annealing.
+
+Execute Program
+-Give Execution Permissions to start_program.sh file -> chmod +x start_program.sh
+
 Running From the Command Line:
 	Switch To the Directory of the Project
-	Run this command “javac Main.java Node.java GeneticAlgorithm.java SimulatedAnnealing.java”
+	Run this command "javac Main.java Node.java GeneticAlgorithm.java SimulatedAnnealing.java"
 	Run "java Main"
 
 You Will Be Prompted to Enter a Choice 1, 2, or 3
@@ -13,9 +19,9 @@ You Will Be Prompted to Enter a Choice 1, 2, or 3
 3: Exits Program
 
 Output:
-Both Outputs display the nxn board configuation and the positions of the queen.
+Both Outputs display the nxn board configuration and the positions of the queen.
 
-Board Implementation: [0, 1, 2, 3, 4] ---> Q x x x x
+Board Implementation: [1, 2, 3, 4] ---> Q x x x x
 					   x Q x x x
 					   x x Q x x
 					   x x x Q x

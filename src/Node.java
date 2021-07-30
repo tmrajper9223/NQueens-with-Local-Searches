@@ -40,7 +40,7 @@ public class Node implements Comparable<Node> {
 	 * x x x Q x
 	 * x x x x Q
 	 * @param n
-	 * @return
+	 * @return Random Board With Queens
 	 */
 	public int[] generateBoard(int n) {
 		Random rand = new Random();
@@ -54,7 +54,7 @@ public class Node implements Comparable<Node> {
 	/**
 	 * Counts the number of attacking queens in each Row and Diagonal
 	 * @param board
-	 * @return
+	 * @return Number of Attacks On The Board
 	 */
 	public int calcAttacks(int[] board) {
 		int counter = 0;

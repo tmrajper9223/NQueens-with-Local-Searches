@@ -34,7 +34,7 @@ public class GeneticAlgorithm {
 	 * Chance of mutation occurring is based on user input
 	 * Algorithm performs better with higher mutation rate and slower with small mutation rate
 	 * @param population
-	 * @return
+	 * @return Child Node With No Attacking Queens
 	 */
 	public Node genetic(PriorityQueue<Node> population) {
 		Random rand = new Random();
@@ -64,9 +64,9 @@ public class GeneticAlgorithm {
 	}
 	
 	/**
-	 * Delects Top 2 most fit from the populations and returns the 2 Nodes as an array
+	 * Delects Top 2 most fit from the populations
 	 * @param population
-	 * @return
+	 * @return Top 2 Most Fit Parent Nodes
 	 */
 	public Node[] fitness(PriorityQueue<Node> population) {
 		int counter = 0;
@@ -85,7 +85,7 @@ public class GeneticAlgorithm {
 	 * Takes a random size from Node x and a random size from Node y to create a new child
 	 * @param x
 	 * @param y
-	 * @return
+	 * @return New Child Node Board
 	 */
 	public Node reproduce(Node x, Node y) {
 		Random rand = new Random();
@@ -100,7 +100,7 @@ public class GeneticAlgorithm {
 	/**
 	 * Randomly moves one queen on the board
 	 * @param child
-	 * @return
+	 * @return Mutated Node
 	 */
 	public Node mutate(Node child) {
 		int[] board = child.getBoard();
